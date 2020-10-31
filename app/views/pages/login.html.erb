@@ -1,0 +1,24 @@
+<section class="login-section">
+  <h1 class="logreg-h1">Welcome to Kokoku</h1>
+  <p class="logreg-p">To login please fill in the form below</p>
+
+
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="inputGroup">
+    <div class="inputLabel">
+      <%= f.label :email, 'E-mail', :class => 'labelInput' %>
+      <%= f.text_field :email, :class => 'login-text-input' %>
+    </div>
+  </div>
+  <div class="inputGroup">
+    <div class="inputLabel">
+      <%= f.label :password, 'Password', :class => 'labelInput' %>
+      <%= f.password_field (:password), :class => 'login-password', :required => true %>
+    </div>
+    <%= link_to 'Forgot password?', new_user_password_path %>
+  </div>
+   <div class="actions">
+    <%= f.submit "Log in" %>
+  </div>
+<% end %>
+</section>

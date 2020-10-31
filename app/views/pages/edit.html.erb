@@ -1,0 +1,32 @@
+<section class="edit-info-section">
+  <h1>Change profile picture</h1>
+  <p>Upload your picture in JPG, JPEG or PNG format</p>
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:method => :put, :multipart => true}) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="inputGroup">
+    <div class="inputLabel">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+  </div>
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+  <div class="inputGroup">
+    <div class="inputLabel">
+      <%= f.label :username, 'Profile picture', :class => 'edit-file-input' %><br />
+      <%= f.file_field :avatar, accept: 'image/png, image/jpg' %>
+    </div>
+  </div>
+  <div class="inputGroup">
+    <div class="inputLabel">
+      <%= f.label :current_password, 'To confirm the changes please write your password' %><br />
+      <%= f.password_field :current_password, autocomplete: "current-password" %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Change info" %>
+    <%= link_to "Cancel", home_path_url, :class => 'cancel-link' %>
+  </div>
+  <% end %>
+</section>

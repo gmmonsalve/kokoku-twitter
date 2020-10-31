@@ -1,0 +1,18 @@
+.logreg-h1 {
+  color: var(--soft-pink);
+}
+
+.logreg-h1, .logreg-p {
+  text-align: center;
+}
+
+.login-form, .registration-form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-text-input, .registration-text-input, .login-password, .registration-password {
+  width: 250px;
+}

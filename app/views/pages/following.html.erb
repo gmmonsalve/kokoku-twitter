@@ -1,0 +1,15 @@
+<section class="follow">
+  <h2>Following</h2>
+  <br>
+  <hr>
+  <br>
+  <div class="all-follow">
+    <% current_user.users_following.each do |follower| %>
+      <div class="user">
+        <%= image_tag (follower.avatar.url), :class => 'user-img'  %>
+        <p class="username"><%= follower.username %></p>
+        <%= button_to "unfollow", unfollow_path, params: {id: follower.id}, method: :delete %>
+      </div>
+    <% end %>
+  </div>
+</section>

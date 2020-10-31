@@ -1,0 +1,19 @@
+<section class="follow">
+  <h2>Followers</h2>
+  <br>
+  <hr>
+  <br>
+  <div class="all-follow">
+    <% current_user.get_followers.each do |follower| %>
+      <div class="user">
+        <%= image_tag (follower.avatar.url), :class => 'user-img'  %>
+        <p class="username"><%= follower.username %></p>
+        <% if !current_user.users_following.include? follower %>
+          <%= button_to "Follow", follow_path, params: {id: follower.id} %>
+        <% else %>
+          <%= button_to "unfollow", unfollow_path, params: {id: follower.id}, method: :delete %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>

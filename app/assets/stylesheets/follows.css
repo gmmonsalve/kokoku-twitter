@@ -1,0 +1,17 @@
+.follow {
+  display: block;
+  margin: 10vh auto;
+  height: 80vh;
+  width: 500px;
+  background-color: var(--soft-pink);
+}
+
+.follow h2 {
+  margin-top: 1em;
+  color: white;
+  text-align: center;
+}
+
+.all-follow {
+  overflow: auto;
+}

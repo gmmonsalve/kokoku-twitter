@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --soft-blue: #B3D3F5;
+  --softer-blue: #D5F5EF;
+  --soft-pink: #F5C4B1;
+  --softer-pink: #F5E3C4;
+  --grey: #F6F5F5;
+  --white: #F2F2F2;
+  --bluish-grey: #657786;
+  --sky-blue: #1DB6F2;
+  --ocean-blue: #1B618C;
+  --dark-blue: #1F3340;
+  --darkest-blue: #131D26;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+/*ESTILO DE EL FORMULARIO*/
+.loginForm {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.labelInput {
+  color: var(--soft-pink);
+}
+
+.forgotPass, footer a {
+  font-size: 90%;
+  color: var(--soft-pink);
+  text-decoration: none;
+}
+
+input[type="text"], input[type="password"] {
+  width: 195px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--soft-pink);
+  color: var(--bluish-grey);
+  background-color: white;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  margin: 10px;
+}
+input[type="submit"], button, section a {
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.loginSub {
+  height: 40px;
+  width: 80px;
+  font-size: 15px;
+}
+
+.loginSub, .login {
+  color: var(--soft-pink);
+  border-color: var(--soft-pink);
+  background-color: transparent;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.inputLabel {
+  width: 197px;
+}
+
+/*ESTILO DEL CONTENIDO DEL MEDIO*/
+.logoAndBtns {
+  margin-top: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 320px;
+}
+
+.index-h1 {
+  font-size: 27px;
+}
+
+.index-h1, .index-p {
+  color: var(--soft-pink)
+}
+
+.logoAndBtns a {
+  margin: 10px 0px;
+  padding: 12px 124px;
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.button-divisor {
+  padding: 15px 10px;
+}
+
+.signup {
+  color: var(--white);
+  background-color: var(--soft-pink);
+  border: none;
+}
+
+/*ESTILOS DEL FOOTER*/
+.index-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer a {
+  padding: 0px 5px;
+  color: var(--bluish-grey);
+}

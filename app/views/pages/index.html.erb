@@ -1,0 +1,51 @@
+<section class="indexBody">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="inputs">
+      <div class="inputGroup">
+        <div class="inputLabel">
+          <%= f.label :email, 'Phone, Username or E-mail', :class => 'labelInput' %>
+          <%= f.text_field :email, :class => 'textinput' %>
+        </div>
+      </div>
+      <div class="inputGroup">
+        <div class="inputLabel">
+          <%= f.label :password, :class => 'labelInput' %>
+          <%= f.password_field (:password), :class => 'textinput' %>
+        </div>
+         <%= link_to 'Forgot password?', new_user_password_path %>
+      </div>
+      <%= f.submit 'Log in', :class => 'loginSub' %>
+    </div>
+  <% end %>
+
+  <section class="logoAndBtns">
+    <img src="https://img.icons8.com/officel/60/000000/origami.png" alt="origami bird" />
+    <h1 class="index-h1">See what's happening in the world right now</h1>
+    <p class="index-p">Join Kokoku today</p>
+    <div class="button-divisor">
+      <%= link_to "Sign up", register_path_url, class:"signup" %>
+    </div>
+    <div class="button-divisor">
+      <%= link_to "Log in", login_path_url, class:"login" %>
+    </div>
+  </section>
+  <footer class="index-footer">
+    <a href="#">About</a>
+    <a href="#">Help center</a>
+    <a href="#">Terms</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Cookies</a>
+    <a href="#">Ads info</a>
+    <a href="#">Blog</a>
+    <a href="#">Status</a>
+    <a href="#">Jobs</a>
+    <a href="#">Brand</a>
+    <a href="#">Advertise</a>
+    <a href="#">Marketing</a>
+    <a href="#">Businesses</a>
+    <a href="#">Developers</a>
+    <a href="#">Directory</a>
+    <a href="#">Settings</a>
+    <a href="#">&#169; 2020 Twitter, inc.</a>
+  </footer>
+</section>

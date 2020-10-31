@@ -1,0 +1,11 @@
+.edit-info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cancel-link {
+  color: red;
+  border: 2px solid red;
+  padding: 15px 20px;
+}
