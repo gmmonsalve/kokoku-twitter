@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_10_26_033433) do
 
   create_table "follows", force: :cascade do |t|
-    t.string "follower"
-    t.string "followed"
+    t.integer "follower"
+    t.integer "followed"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
